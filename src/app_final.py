@@ -112,6 +112,9 @@ def get_wiki_url(query):
 
 if tool == "Mood Analyzer":
     sentiment()
+
+
+if tool == "Help Me Write My Essay":
     summary()
 
 
