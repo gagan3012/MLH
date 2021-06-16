@@ -112,3 +112,8 @@ def get_wiki_url(query):
 
 if tool == "Mood Analyzer":
     sentiment()
+    summary()
+
+
+if tool == "Wikipedia Answers":
+    wiki_answers()
