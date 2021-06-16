@@ -45,9 +45,10 @@ def generatesummary(text):
     return answer
 
 
-def sentiment():
-    st.write("# What sentence describes your mood?")
-    user_input = st.text_input("Enter Text")
+def website_qna():
+    st.write("# Website QnA")
+    user_input = st.text_input("Website Link:", value="https://en.wikipedia.org/wiki/Machine_learning")
+    question = st.text_input("Question:", value="What is Machine Learning?")
 
     if st.button('Get my mood'):
         answer = generate_sentiment(user_input)
