@@ -19,3 +19,9 @@ st.sidebar.markdown(
     "being extracted from the text.")
 st.sidebar.markdown(
     "_When running the app the first time, it may take some time to initialise due to the requirements needing to be "
+    "downloaded._")
+tool = st.sidebar.selectbox("Tool", ["Mood Analyzer", "Help Me Write My Essay", "Help Me Summarize A Passage", "Wikipedia Answers"])
+
+
+@st.cache(suppress_st_warning=True)
+def generate_answer(question, context):
