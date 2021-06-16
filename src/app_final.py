@@ -70,3 +70,11 @@ def text():
 
     if st.button('Finish my essay'):
         answer = generate_text(user_input)
+        st.header("Answer")
+        st.write(answer[0]["generated_text"])
+        st.write(answer[1]["generated_text"])
+
+
+def summary():
+    st.write("# Help Me Summarize A Passage")
+    user_input = st.text_area("Enter passage")
