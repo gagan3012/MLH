@@ -39,3 +39,10 @@ def generate_sentiment(text):
 
 @st.cache(suppress_st_warning=True)
 def generate_text(starting_text):
+    answer = gpt2(starting_text, max_length=50, num_return_sequences=2)
+    return answer
+
+
+@st.cache(suppress_st_warning=True)
+def generate_summary(text):
+    summarizer = pipeline("summarization")
