@@ -31,6 +31,9 @@ def generate_answer(question, context):
 
 
 @st.cache(suppress_st_warning=True)
+def generate_sentiment(text):
+    nlp = pipeline('sentiment-analysis')
+    answer = nlp(text)
     return answer
 
 
