@@ -11,15 +11,8 @@ st.sidebar.markdown(
 tool = st.sidebar.selectbox("Tool", ["Sentiment Analysis", "Text Generation"])
 
 
-@st.cache(suppress_st_warning=True)
-def generateAnswer(question, context):
-    nlp = pipeline("question-answering")
-    answer = nlp(question=question, context=context)
-    return answer
-
-
-@st.cache(suppress_st_warning=True)
-def generatesentiment(text):
+@st.cache(suppress_st_warning=True,allow_output_mutation=True)
+def generatesentiment():
     nlp = pipeline('sentiment-analysis')
     return nlp
 
