@@ -67,9 +67,9 @@ def website_qna():
         st.write(answer)
 
 
-def summary():
-    st.write("# Help Me Summarize A Passage")
-    user_input = st.text_area("Enter passage")
+def sentiment():
+    st.write("# Sentiment Analysis")
+    user_input = st.text_input("Enter Text")
 
     if st.button('Get summary'):
         answer = generate_summary(user_input)
