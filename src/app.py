@@ -16,8 +16,8 @@ def generatesentiment():
     return nlp
 
 
-@st.cache(suppress_st_warning=True)
-def generatetext(starting_text):
+@st.cache(suppress_st_warning=True,allow_output_mutation=True)
+def generatetext():
     gpt2 = pipeline('text-generation')
     return gpt2
 
