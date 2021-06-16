@@ -31,3 +31,10 @@ def generate_answer(question, context):
 
 
 @st.cache(suppress_st_warning=True)
+    return answer
+
+
+@st.cache(suppress_st_warning=True)
+def generate_text(starting_text):
+    gpt2 = pipeline('text-generation')
+    answer = gpt2(starting_text, max_length=50, num_return_sequences=2)
