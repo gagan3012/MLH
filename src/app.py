@@ -1,4 +1,3 @@
-import googlesearch
 import streamlit as st
 from transformers import pipeline
 import requests
@@ -99,28 +98,30 @@ def wiki_answers():
         for p in paragraphs:
             article_text += p.text
 
-        answer = generate_answer(question, article_text)
+    if st.button('Get Text Answer'):
+        answer = generatetext(user_input)
         st.header("Answer")
-        st.write(answer["answer"])
+        st.write(answer)
 
 
-__BASE_URL__ = "en.wikipedia.org"
-def get_wiki_url(query):
-    for url in googlesearch.search("site:{} {}".format(__BASE_URL__, query), stop=10):
-        return url
+def summary():
+    st.write("# Summary Generation")
+    user_input = st.text_area("Enter Text",value="")
+
+    if st.button('Get Sentiment'):
+        answer = generatesummary(user_input)
+        st.header("Answer")
+        st.write(answer)
 
 
-if tool == "Mood Analyzer":
+if tool == "Website Q&A":
+    website_qna()
+
+if tool == "Sentiment Analysis":
     sentiment()
 
-
-if tool == "Help Me Write My Essay":
+if tool == "Text Generation":
     text()
 
-
-if tool == "Help Me Summarize A Passage":
+if tool == "Summary Generation":
     summary()
-
-
-if tool == "Wikipedia Answers":
-    wiki_answers()
