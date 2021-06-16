@@ -62,8 +62,7 @@ def website_qna():
         for p in paragraphs:
             article_text += p.text
 
-    if st.button('Finish my essay'):
-        answer = generate_text(user_input)
+        answer = generateAnswer(question, article_text)
         st.header("Answer")
         st.write(answer[0]["generated_text"])
         st.write(answer[1]["generated_text"])
