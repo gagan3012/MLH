@@ -78,3 +78,10 @@ def text():
 def summary():
     st.write("# Help Me Summarize A Passage")
     user_input = st.text_area("Enter passage")
+
+    if st.button('Get summary'):
+        answer = generate_summary(user_input)
+        st.header("Answer")
+        st.write(answer[0]["summary_text"])
+
+
