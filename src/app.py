@@ -94,3 +94,9 @@ def wiki_answers():
         scraped_data = requests.get(url)
         article = scraped_data.text
         parsed_article = BeautifulSoup(article, 'lxml')
+        paragraphs = parsed_article.find_all('p')
+        article_text = ""
+        for p in paragraphs:
+            article_text += p.text
+
+        answer = generate_answer(question, article_text)
