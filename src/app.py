@@ -100,3 +100,8 @@ def wiki_answers():
             article_text += p.text
 
         answer = generate_answer(question, article_text)
+        st.header("Answer")
+        st.write(answer["answer"])
+
+
+__BASE_URL__ = "en.wikipedia.org"
