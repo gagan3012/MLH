@@ -8,7 +8,7 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     "_When running the app the first time, it may take some time to initialise due to the requirements needing to be "
     "downloaded._")
-tool = st.sidebar.selectbox("Tool", ["Website Q&A", "Sentiment Analysis", "Text Generation", "Summary Generation"])
+tool = st.sidebar.selectbox("Tool", ["Sentiment Analysis", "Text Generation"])
 
 
 @st.cache(suppress_st_warning=True)
