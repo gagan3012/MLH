@@ -88,3 +88,14 @@ def summary():
 def wiki_answers():
     st.write("# Wikipedia Answers")
     question = st.text_input("Question:")
+
+    if st.button("Get Answer"):
+        url = get_wiki_url(question)
+        scraped_data = requests.get(url)
+        article = scraped_data.text
+        parsed_article = BeautifulSoup(article, 'lxml')
+        paragraphs = parsed_article.find_all('p')
+        article_text = ""
+        for p in paragraphs:
+            article_text += p.text
+
