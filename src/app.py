@@ -1,13 +1,7 @@
 import streamlit as st
 from transformers import pipeline
-import requests
-from bs4 import BeautifulSoup
 
-st.sidebar.image("images/DSC University of British Columbia  Light Vertical-Logo.png", width=300, height=500)
 
-st.sidebar.header("""
-© ML Workshop By DSC UBC
-""")
 st.sidebar.markdown(
     "This app allows users to input text of their choice using the tools provided, and ask questions with the answer "
     "being extracted from the text.")
@@ -27,8 +21,7 @@ def generateAnswer(question, context):
 @st.cache(suppress_st_warning=True)
 def generatesentiment(text):
     nlp = pipeline('sentiment-analysis')
-    answer = nlp(text)
-    return answer
+    return nlp
 
 
 @st.cache(suppress_st_warning=True)
@@ -72,7 +65,8 @@ def sentiment():
     user_input = st.text_input("Enter Text")
 
     if st.button('Get Sentiment'):
-        answer = generatesentiment(user_input)
+        nlp = generatesentiment()
+        answer = nlp(user_input)
         st.header("Answer")
         st.write(answer)
 
@@ -82,29 +76,13 @@ def text():
     user_input = st.text_input("Enter Text",value="I love Machine Learning but")
 
     if st.button('Get Text Answer'):
-        answer = generatetext(user_input)
+        gpt2 = generatetext()
+        answer = gpt2(user_input, max_length=50, num_return_sequences=2)
         st.header("Answer")
         st.write(answer)
-
-
-def summary():
-    st.write("# Summary Generation")
-    user_input = st.text_area("Enter Text",value="")
-
-    if st.button('Get Sentiment'):
-        answer = generatesummary(user_input)
-        st.header("Answer")
-        st.write(answer)
-
-
-if tool == "Website Q&A":
-    website_qna()
 
 if tool == "Sentiment Analysis":
     sentiment()
 
 if tool == "Text Generation":
     text()
-
-if tool == "Summary Generation":
-    summary()
