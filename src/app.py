@@ -71,8 +71,8 @@ def sentiment():
     st.write("# Sentiment Analysis")
     user_input = st.text_input("Enter Text")
 
-    if st.button('Get summary'):
-        answer = generate_summary(user_input)
+    if st.button('Get Sentiment'):
+        answer = generatesentiment(user_input)
         st.header("Answer")
         st.write(answer[0]["summary_text"])
 
