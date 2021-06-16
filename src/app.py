@@ -56,9 +56,11 @@ def website_qna():
 
         parsed_article = BeautifulSoup(article, 'lxml')
 
-def text():
-    st.write("# Help Me Write My Essay")
-    user_input = st.text_input("Enter what you've already written")
+        paragraphs = parsed_article.find_all('p')
+
+        article_text = ""
+        for p in paragraphs:
+            article_text += p.text
 
     if st.button('Finish my essay'):
         answer = generate_text(user_input)
