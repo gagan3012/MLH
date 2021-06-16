@@ -99,3 +99,16 @@ def wiki_answers():
         for p in paragraphs:
             article_text += p.text
 
+        answer = generate_answer(question, article_text)
+        st.header("Answer")
+        st.write(answer["answer"])
+
+
+__BASE_URL__ = "en.wikipedia.org"
+def get_wiki_url(query):
+    for url in googlesearch.search("site:{} {}".format(__BASE_URL__, query), stop=10):
+        return url
+
+
+if tool == "Mood Analyzer":
+    sentiment()
