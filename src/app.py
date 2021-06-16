@@ -76,9 +76,6 @@ def sentiment():
         st.header("Answer")
         st.write(answer)
 
-def wiki_answers():
-    st.write("# Wikipedia Answers")
-    question = st.text_input("Question:")
 
     if st.button("Get Answer"):
         url = get_wiki_url(question)
