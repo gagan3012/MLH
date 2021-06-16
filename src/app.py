@@ -118,3 +118,6 @@ if tool == "Help Me Write My Essay":
     text()
 
 
+if tool == "Help Me Summarize A Passage":
+    summary()
+
