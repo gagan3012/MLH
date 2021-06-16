@@ -12,7 +12,7 @@ st.set_page_config(
 
 
 st.sidebar.header("""
-© ML Workshop By DSC UBC
+© Gagan Bhatia
 """)
 st.sidebar.markdown(
     "This app allows users to input text of their choice using the tools provided, and ask questions with the answer "
