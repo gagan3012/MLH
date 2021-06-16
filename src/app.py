@@ -4,3 +4,4 @@ from transformers import pipeline
 import requests
 from bs4 import BeautifulSoup
 
+st.set_page_config(
