@@ -41,3 +41,17 @@ def generate_sentiment(text):
 def generate_text(starting_text):
     gpt2 = pipeline('text-generation')
     answer = gpt2(starting_text, max_length=50, num_return_sequences=2)
+    return answer
+
+
+@st.cache(suppress_st_warning=True)
+def generate_summary(text):
+    summarizer = pipeline("summarization")
+    answer = summarizer(text, max_length=100, min_length=30, do_sample=False)
+    return answer
+
+
+def sentiment():
+    st.write("# What sentence describes your mood?")
+    user_input = st.text_input("Enter Text")
+
