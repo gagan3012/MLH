@@ -62,3 +62,10 @@ def sentiment():
             st.write("You seem to be in a great mood! Go gettem king")
         else:
             st.write("Your mood doesn't seem so great right now.. but don't worry! Your future is bright")
+
+
+def text():
+    st.write("# Help Me Write My Essay")
+    user_input = st.text_input("Enter what you've already written")
+
+    if st.button('Finish my essay'):
