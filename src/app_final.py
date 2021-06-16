@@ -115,6 +115,7 @@ if tool == "Mood Analyzer":
 
 
 if tool == "Help Me Write My Essay":
+    text()
     summary()
 
 
