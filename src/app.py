@@ -64,8 +64,7 @@ def website_qna():
 
         answer = generateAnswer(question, article_text)
         st.header("Answer")
-        st.write(answer[0]["generated_text"])
-        st.write(answer[1]["generated_text"])
+        st.write(answer)
 
 
 def summary():
