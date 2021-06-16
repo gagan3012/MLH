@@ -85,3 +85,12 @@ def summary():
         st.write(answer[0]["summary_text"])
 
 
+def wiki_answers():
+    st.write("# Wikipedia Answers")
+    question = st.text_input("Question:")
+
+    if st.button("Get Answer"):
+        url = get_wiki_url(question)
+        scraped_data = requests.get(url)
+        article = scraped_data.text
+        parsed_article = BeautifulSoup(article, 'lxml')
