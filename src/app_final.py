@@ -55,3 +55,10 @@ def sentiment():
     st.write("# What sentence describes your mood?")
     user_input = st.text_input("Enter Text")
 
+    if st.button('Get my mood'):
+        answer = generate_sentiment(user_input)
+        st.header("Answer")
+        if answer[0]["label"] == "POSITIVE":
+            st.write("You seem to be in a great mood! Go gettem king")
+        else:
+            st.write("Your mood doesn't seem so great right now.. but don't worry! Your future is bright")
