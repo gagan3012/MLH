@@ -54,6 +54,7 @@ def website_qna():
         scraped_data = requests.get(user_input)
         article = scraped_data.text
 
+        parsed_article = BeautifulSoup(article, 'lxml')
 
 def text():
     st.write("# Help Me Write My Essay")
