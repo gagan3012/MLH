@@ -74,8 +74,7 @@ def sentiment():
     if st.button('Get Sentiment'):
         answer = generatesentiment(user_input)
         st.header("Answer")
-        st.write(answer[0]["summary_text"])
-
+        st.write(answer)
 
 def wiki_answers():
     st.write("# Wikipedia Answers")
