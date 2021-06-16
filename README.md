@@ -10,3 +10,7 @@ Techstack: Transformers, Streamlit, Beautiful Soup, Requests, PyTorch and Tensor
 Keywords: NLP, sentiment-analysis, Question-answering, GPT-2, HuggingFace
 
 To understand how the pretrained models are used click down here:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/githubgagan3012/ML-hackathons/blob/master/notebooks/Notebook_1.ipynb)
+
+
