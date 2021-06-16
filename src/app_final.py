@@ -23,3 +23,11 @@ st.sidebar.markdown(
 tool = st.sidebar.selectbox("Tool", ["Mood Analyzer", "Help Me Write My Essay", "Help Me Summarize A Passage", "Wikipedia Answers"])
 
 
+@st.cache(suppress_st_warning=True)
+def generate_answer(question, context):
+    nlp = pipeline("question-answering")
+    answer = nlp(question=question, context=context)
+    return answer
+
+
+@st.cache(suppress_st_warning=True)
