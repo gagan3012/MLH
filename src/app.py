@@ -1,7 +1,6 @@
 import streamlit as st
 from transformers import pipeline
 
-
 st.sidebar.markdown(
     "This app allows users to input text of their choice using the tools provided, and ask questions with the answer "
     "being extracted from the text.")
@@ -26,7 +25,6 @@ def generatetext(starting_text):
 def sentiment():
     st.write("# Sentiment Analysis")
     user_input = st.text_input("Enter Text")
-
     if st.button('Get Sentiment'):
         nlp = generatesentiment()
         answer = nlp(user_input)
@@ -37,12 +35,12 @@ def sentiment():
 def text():
     st.write("# GPT-2 Text Generation")
     user_input = st.text_input("Enter Text",value="I love Machine Learning but")
-
     if st.button('Get Text Answer'):
         gpt2 = generatetext()
         answer = gpt2(user_input, max_length=50, num_return_sequences=2)
         st.header("Answer")
         st.write(answer)
+
 
 if tool == "Sentiment Analysis":
     sentiment()
