@@ -53,3 +53,7 @@ def generate_summary(text):
 
 def sentiment():
     st.write("# What sentence describes your mood?")
+    user_input = st.text_input("Enter Text")
+
+    if st.button('Get my mood'):
+        answer = generate_sentiment(user_input)
