@@ -12,3 +12,4 @@ st.set_page_config(
 
 
 st.sidebar.header("""
+© ML Workshop By DSC UBC
