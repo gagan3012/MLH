@@ -122,3 +122,4 @@ if tool == "Help Me Summarize A Passage":
     summary()
 
 
+if tool == "Wikipedia Answers":
