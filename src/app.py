@@ -41,7 +41,7 @@ def generatetext(starting_text):
 @st.cache(suppress_st_warning=True)
 def generatesummary(text):
     summarizer = pipeline("summarization")
-    answer = summarizer(text, max_length=100, min_length=30, do_sample=False)
+    answer = (summarizer(text, max_length=100, min_length=30, do_sample=False))
     return answer
 
 
