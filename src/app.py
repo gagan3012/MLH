@@ -77,15 +77,9 @@ def sentiment():
         st.write(answer)
 
 
-    if st.button("Get Answer"):
-        url = get_wiki_url(question)
-        scraped_data = requests.get(url)
-        article = scraped_data.text
-        parsed_article = BeautifulSoup(article, 'lxml')
-        paragraphs = parsed_article.find_all('p')
-        article_text = ""
-        for p in paragraphs:
-            article_text += p.text
+def text():
+    st.write("# GPT-2 Text Generation")
+    user_input = st.text_input("Enter Text",value="I love Machine Learning but")
 
     if st.button('Get Text Answer'):
         answer = generatetext(user_input)
