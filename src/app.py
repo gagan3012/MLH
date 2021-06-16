@@ -114,3 +114,7 @@ if tool == "Mood Analyzer":
     sentiment()
 
 
+if tool == "Help Me Write My Essay":
+    text()
+
+
