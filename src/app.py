@@ -123,3 +123,4 @@ if tool == "Help Me Summarize A Passage":
 
 
 if tool == "Wikipedia Answers":
+    wiki_answers()
