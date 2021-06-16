@@ -50,13 +50,9 @@ def website_qna():
     user_input = st.text_input("Website Link:", value="https://en.wikipedia.org/wiki/Machine_learning")
     question = st.text_input("Question:", value="What is Machine Learning?")
 
-    if st.button('Get my mood'):
-        answer = generate_sentiment(user_input)
-        st.header("Answer")
-        if answer[0]["label"] == "POSITIVE":
-            st.write("You seem to be in a great mood! Go gettem king")
-        else:
-            st.write("Your mood doesn't seem so great right now.. but don't worry! Your future is bright")
+    if st.button("Get Answer"):
+        scraped_data = requests.get(user_input)
+        article = scraped_data.text
 
 
 def text():
