@@ -18,7 +18,7 @@ tool = st.sidebar.selectbox("Tool", ["Website Q&A", "Sentiment Analysis", "Text 
 
 
 @st.cache(suppress_st_warning=True)
-def generate_answer(question, context):
+def generateAnswer(question, context):
     nlp = pipeline("question-answering")
     answer = nlp(question=question, context=context)
     return answer
