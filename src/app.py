@@ -20,37 +20,7 @@ def generatesentiment():
 @st.cache(suppress_st_warning=True)
 def generatetext(starting_text):
     gpt2 = pipeline('text-generation')
-    answer = gpt2(starting_text, max_length=50, num_return_sequences=2)
-    return answer
-
-
-@st.cache(suppress_st_warning=True)
-def generatesummary(text):
-    summarizer = pipeline("summarization")
-    answer = (summarizer(text, max_length=100, min_length=30, do_sample=False))
-    return answer
-
-
-def website_qna():
-    st.write("# Website QnA")
-    user_input = st.text_input("Website Link:", value="https://en.wikipedia.org/wiki/Machine_learning")
-    question = st.text_input("Question:", value="What is Machine Learning?")
-
-    if st.button("Get Answer"):
-        scraped_data = requests.get(user_input)
-        article = scraped_data.text
-
-        parsed_article = BeautifulSoup(article, 'lxml')
-
-        paragraphs = parsed_article.find_all('p')
-
-        article_text = ""
-        for p in paragraphs:
-            article_text += p.text
-
-        answer = generateAnswer(question, article_text)
-        st.header("Answer")
-        st.write(answer)
+    return gpt2
 
 
 def sentiment():
