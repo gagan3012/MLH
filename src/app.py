@@ -105,3 +105,5 @@ def wiki_answers():
 
 
 __BASE_URL__ = "en.wikipedia.org"
+def get_wiki_url(query):
+    for url in googlesearch.search("site:{} {}".format(__BASE_URL__, query), stop=10):
