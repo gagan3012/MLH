@@ -13,3 +13,9 @@ st.set_page_config(
 
 st.sidebar.header("""
 © ML Workshop By DSC UBC
+""")
+st.sidebar.markdown(
+    "This app allows users to input text of their choice using the tools provided, and ask questions with the answer "
+    "being extracted from the text.")
+st.sidebar.markdown(
+    "_When running the app the first time, it may take some time to initialise due to the requirements needing to be "
