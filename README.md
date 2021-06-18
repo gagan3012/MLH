@@ -17,3 +17,4 @@ To understand how the pretrained models are used click down here:
 To get started:
 
 ```shell script
+git clone https://github.com/gagan3012/ML-hackathons.git
