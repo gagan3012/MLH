@@ -2,3 +2,4 @@ streamlit
 transformers
 requests
 bs4
+googlesearch-python
