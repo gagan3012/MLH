@@ -32,3 +32,4 @@ streamlit run src/app.py
 | NLP Tasks                | What are the Different NLP Tasks                                                    | 5 Min    |
 | My ML toolkit            | How to get started with ML                                                          | 10 Min   |
 | ML Tools in details      | Few tools in details to understand ML libraries                                     | 10 Min   |
+| Colab Experiments        | Jupyter Notebooks Experiments and understanding how the transformers pipeline works | 15 Min   |
