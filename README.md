@@ -30,3 +30,4 @@ streamlit run src/app.py
 | What is machine learning | Details and description of Machine Learning                                         | 15 Min   |
 | NLP basics               | What is NLP and Why is it so important                                              | 15 Min   |
 | NLP Tasks                | What are the Different NLP Tasks                                                    | 5 Min    |
+| My ML toolkit            | How to get started with ML                                                          | 10 Min   |
