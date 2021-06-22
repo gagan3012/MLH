@@ -24,6 +24,8 @@ pip install -r requirements.txt
 streamlit run src/app.py
 ```
 
+Schdule: 
+
 | Section name             | Description                                                                         | Length   |
 |--------------------------|-------------------------------------------------------------------------------------|----------|
 | Introduction             | Machine Learning basics and Getting to know your speaker                            | 5-10 Min |
