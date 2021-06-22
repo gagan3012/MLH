@@ -24,3 +24,4 @@ pip install -r requirements.txt
 streamlit run src/app.py
 ```
 
+| Section name             | Description                                                                         | Length   |
