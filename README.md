@@ -31,3 +31,4 @@ streamlit run src/app.py
 | NLP basics               | What is NLP and Why is it so important                                              | 15 Min   |
 | NLP Tasks                | What are the Different NLP Tasks                                                    | 5 Min    |
 | My ML toolkit            | How to get started with ML                                                          | 10 Min   |
+| ML Tools in details      | Few tools in details to understand ML libraries                                     | 10 Min   |
