@@ -27,3 +27,4 @@ streamlit run src/app.py
 | Section name             | Description                                                                         | Length   |
 |--------------------------|-------------------------------------------------------------------------------------|----------|
 | Introduction             | Machine Learning basics and Getting to know your speaker                            | 5-10 Min |
+| What is machine learning | Details and description of Machine Learning                                         | 15 Min   |
