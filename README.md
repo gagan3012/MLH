@@ -29,3 +29,4 @@ streamlit run src/app.py
 | Introduction             | Machine Learning basics and Getting to know your speaker                            | 5-10 Min |
 | What is machine learning | Details and description of Machine Learning                                         | 15 Min   |
 | NLP basics               | What is NLP and Why is it so important                                              | 15 Min   |
+| NLP Tasks                | What are the Different NLP Tasks                                                    | 5 Min    |
