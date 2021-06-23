@@ -7,7 +7,6 @@ In this workshop, we will be explaining the basics of Machine Learning and NLP a
 
 **Techstack**: Transformers, Streamlit, Beautiful Soup, Requests, PyTorch and Tensorflow
 
-Keywords: NLP, sentiment-analysis, Question-answering, GPT-2, HuggingFace
 **Keywords**: NLP, sentiment-analysis, Question-answering, GPT-2, HuggingFace
 
 To understand how the pretrained models are used click down here:
