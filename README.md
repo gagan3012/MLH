@@ -3,7 +3,6 @@ Machine Learning for Hackathons Workshop
 
 In this workshop, we will be explaining the basics of Machine Learning and NLP and we will also be experimenting with 'straight out-of-the-box' functionalities of HuggingFace Transformers, without using any data, training, pre-training, or fine-tuning of any sorts. Finally, We will be explaining how ML Models can be deployed to a simple Web App using Streamlit.
 
-Prerequisites: Basics of Python and Understanding of Juypter notebooks
 **Prerequisites**: Basics of Python and Understanding of Juypter notebooks
 
 Techstack: Transformers, Streamlit, Beautiful Soup, Requests, PyTorch and Tensorflow
