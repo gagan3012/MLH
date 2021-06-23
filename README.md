@@ -5,6 +5,7 @@ In this workshop, we will be explaining the basics of Machine Learning and NLP a
 
 **Prerequisites**: Basics of Python and Understanding of Juypter notebooks
 
+**Techstack**: Transformers, Streamlit, Beautiful Soup, Requests, PyTorch and Tensorflow
 
 Keywords: NLP, sentiment-analysis, Question-answering, GPT-2, HuggingFace
 
