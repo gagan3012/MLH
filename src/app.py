@@ -40,7 +40,6 @@ def text():
         answer = gpt2(user_input, max_length=50, num_return_sequences=2)
         st.header("Answer")
         st.write(answer[0]["generated_text"])
-        #st.write(answer)
 
 
 if tool == "Sentiment Analysis":
