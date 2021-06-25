@@ -1,4 +1,3 @@
-# ML-hackathons
 # Machine Learning for Hackathons
 Machine Learning for Hackathons Workshop
 
