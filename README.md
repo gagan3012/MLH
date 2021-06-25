@@ -39,3 +39,4 @@ streamlit run src/app.py
 | ML Tools in details      | Few tools in details to understand ML libraries                                     | 10 Min   |
 | Colab Experiments        | Jupyter Notebooks Experiments and understanding how the transformers pipeline works | 15 Min   |
 | ML Webapps               | How to convert a ML model in to webapp using streamlit                              | 15 Min   |
+
