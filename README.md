@@ -50,6 +50,7 @@ streamlit run src/app.py
 
 **Pytorch Documentation**: https://pytorch.org/docs/stable/index.html
 
+**Streamlit**: https://github.com/streamlit/streamlit
 
 
 
