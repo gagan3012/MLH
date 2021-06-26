@@ -46,3 +46,4 @@ HugginFace Transformers: https://github.com/huggingface/transformers
 
 Pipeline Documentation: https://huggingface.co/transformers/task_summary.html
 
+Pytorch: https://github.com/pytorch/pytorch
