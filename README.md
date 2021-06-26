@@ -37,7 +37,6 @@ streamlit run src/app.py
 | ML Webapps               | How to convert a ML model in to webapp using streamlit                              | 15 Min   |
 
 
-HugginFace Transformers: https://github.com/huggingface/transformers
 
 Pipeline Documentation: https://huggingface.co/transformers/task_summary.html
 
