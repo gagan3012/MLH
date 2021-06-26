@@ -56,6 +56,7 @@ streamlit run src/app.py
 
 **ML Roadmap**: https://i.am.ai/roadmap/
 
+**NLP Guide**: https://github.com/bzantium/nlp-guide
 
 
 
