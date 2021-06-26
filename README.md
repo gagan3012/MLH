@@ -42,7 +42,6 @@ streamlit run src/app.py
 
 
 
-Streamlit Documentaion: https://docs.streamlit.io/en/stable/
 
 ML Roadmap: https://i.am.ai/roadmap/
 
