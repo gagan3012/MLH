@@ -15,7 +15,6 @@ In this workshop, we will be explaining the basics of Machine Learning and NLP a
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gagan3012/ML-hackathons/blob/master/notebooks/Notebook_2.ipynb)
 
-#### To get started:
 
 ```shell script
 git clone https://github.com/gagan3012/ML-hackathons.git
