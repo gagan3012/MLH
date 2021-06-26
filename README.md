@@ -46,5 +46,4 @@ streamlit run src/app.py
 
 
 
-Project ideas: https://github.com/NirantK/awesome-project-ideas
 
