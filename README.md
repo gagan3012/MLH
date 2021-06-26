@@ -27,6 +27,7 @@ pip install -r requirements.txt
 streamlit run src/app.py
 ```
 
+### Schedule: 
 
 | Section name             | Description                                                                         | Length   |
 |--------------------------|-------------------------------------------------------------------------------------|----------|
