@@ -38,7 +38,6 @@ streamlit run src/app.py
 
 
 
-Pipeline Documentation: https://huggingface.co/transformers/task_summary.html
 
 Pytorch: https://github.com/pytorch/pytorch
 
