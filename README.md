@@ -52,6 +52,7 @@ streamlit run src/app.py
 
 **Streamlit**: https://github.com/streamlit/streamlit
 
+**Streamlit Documentaion**: https://docs.streamlit.io/en/stable/
 
 
 
