@@ -52,3 +52,4 @@ Pytorch Documentation: https://pytorch.org/docs/stable/index.html
 
 Streamlit: https://github.com/streamlit/streamlit
 
+Streamlit Documentaion: https://docs.streamlit.io/en/stable/
