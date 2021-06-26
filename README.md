@@ -44,3 +44,4 @@ streamlit run src/app.py
 
 HugginFace Transformers: https://github.com/huggingface/transformers
 
+Pipeline Documentation: https://huggingface.co/transformers/task_summary.html
