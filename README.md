@@ -58,3 +58,4 @@ ML Roadmap: https://i.am.ai/roadmap/
 
 NLP Guide: https://github.com/bzantium/nlp-guide
 
+Awesome Libraries: https://github.com/keon/awesome-nlp#libraries
