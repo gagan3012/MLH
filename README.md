@@ -41,7 +41,7 @@ streamlit run src/app.py
 
 ### References 
 
-**HugginFace Transformers**: https://github.com/huggingface/transformers
+**HuggingFace Transformers**: https://github.com/huggingface/transformers
 
 **Pipeline Documentation**: https://huggingface.co/transformers/task_summary.html
 
