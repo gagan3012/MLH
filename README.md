@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=fIjkAe9UK6k
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gagan3012/ML-hackathons/blob/master/notebooks/Notebook_1.ipynb)
 
-### Find a advance fine tuning script here: 
+### Find a advance fine tuning script here (for GPT-2): 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gagan3012/ML-hackathons/blob/master/notebooks/Notebook_2.ipynb)
 
